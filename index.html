@@ -140,7 +140,6 @@
                   class="functions-pic"
                   src="./images/code.jpg"
                   alt="пишется код"
-                  class="hren"
                   width="370"
                 />
                 <h3 class="title function-title">Десктопные приложения</h3>
@@ -463,25 +462,24 @@
         <div>
           <h3 class="footer-email-title">Подпишитесь на рассылку</h3>
           <div class="footer-email-input">
-          <form class="footer-email-form">
-            <label class="" for="email">
-              <input
-              class="footer-email-box"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-                
-              />
-            </label>
-            <button class="footer-imput-btn" type="submit">
-              <span>Подписаться</span>
-              <svg class="footer-email-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
-            </div>
-          </form>
+            <form class="footer-email-form">
+              <label class="" for="email">
+                <input
+                  class="footer-email-box"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="footer-imput-btn" type="submit">
+                <span>Подписаться</span>
+                <svg class="footer-email-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -493,32 +491,64 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <div></div>
-        <form class="form-list" name="recall-form" novalidate>
-          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="form-item" for="user-name">Имя <svg class="form-icon" width="12px" height="12px">
-            <use href="./images/icons.svg#person"></use>
-          </svg></label>
-             <input class="form-list-box" type="text" name="name" id="user-name" autofocus /><br />
-          <label class="form-item" for="user-tel">Телефон</label>
-            <input class="form-list-box" type="tel" name="phone-number" id="user-tel" /><br />
-          <label class="form-item" for="email">Почта</label>
-             <input class="form-list-box" type="emeil" name="email" id="email" /><br />
-          <label class="form-item" for="comment">Комментарий</label>
-             <input class="form-list-box" type="text" name="comment" placeholder="Введите текст" />
-          <br />
-             <input type="checkbox" name="" id="" />
+        <div>
+          <form class="form-list" name="recall-form" novalidate>
+            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="form-item"
+              >Имя
+              <input class="form-list-box" type="text" name="name" autofocus />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </label>
+            <label class="form-item"
+              >Телефон
+              <input class="form-list-box" type="tel" name="phone-number" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </label>
+            <label class="form-item"
+              >Почта
+              <input class="form-list-box" type="email" name="email" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </label>
+            <label class="form-item"
+              >Комментарий
+              <textarea
+                class="form-comment-box"
+                name="comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+            <!-- <label class="form-lable">
+              <input
+                class="checkbox form-input-checkbox"
+                type="checkbox"
+                value=""
+              /> -->
+            <label class="form-check-item">
+              <input class="form-check-box" type="checkbox" name="policy" />
+              <span class="form-check-icon"> </span
+              ><span class="form-check-text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="form-link" href=""> Условия договора</a></span
+              >
+            </label>
 
-          <!-- <p class="form-text">
+            <!-- <p class="form-text">
             Соглашаюсь с рассылкой и принимаю
             <a class="form-link" href="">Условия договора</a>
           </p> -->
-            <label class="form-check-text" for="checkbox">
+            <!-- <label class="form-check-text" for="checkbox">
             <span>Соглашаюсь с рассылкой и принимаю</span>
             <a class="form-link" href="">Условия договора</a>
-          </label>
-          <button class="form-btn" type="submit">Отправить</button>
-        </form>
+          </label> -->
+            <button class="form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
