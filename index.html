@@ -487,13 +487,21 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" data-modal>
         <button class="reset-btn" type="button" data-modal-close>
-          <svg class="bd-close-icon" width="50px" height="14px">
+          <svg class="bd-close-icon" width="18px" height="18px">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
         <div>
-          <form class="form-list" name="recall-form" novalidate>
-            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <form
+            class="form-list"
+            name="subscribe-form"
+            role="group"
+            autocomplete="on"
+            novalidate
+          >
+            <strong class="form-title"
+              >Оставьте свои данные, мы вам перезвоним</strong
+            >
             <label class="form-item"
               >Имя
               <input class="form-list-box" type="text" name="name" autofocus />
@@ -503,7 +511,7 @@
             </label>
             <label class="form-item"
               >Телефон
-              <input class="form-list-box" type="tel" name="phone-number" />
+              <input class="form-list-box" type="tel" name="tel" />
               <svg class="form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
@@ -515,11 +523,13 @@
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </label>
-            <label class="form-item"
+            <label class="form-item" for="comment"
               >Комментарий
               <textarea
                 class="form-comment-box"
                 name="comment"
+                id="comment"
+                rows="6"
                 placeholder="Введите текст"
               ></textarea>
             </label>
@@ -529,9 +539,17 @@
                 type="checkbox"
                 value=""
               /> -->
-            <label class="form-check-item">
-              <input class="form-check-box" type="checkbox" name="policy" />
-              <span class="form-check-icon"> </span
+            <label class="form-check-item" for="policy">
+              <input
+                class="form-check-box form-check-hidden"
+                type="checkbox"
+                value=""
+                id="policy"
+              />
+              <span class="form-check-icon-box">
+                <svg class="form-check-icon" width="16px" height="15px">
+                  <use href="./images/icons.svg#check"></use>
+                </svg> </span
               ><span class="form-check-text"
                 >Соглашаюсь с рассылкой и принимаю
                 <a class="form-link" href=""> Условия договора</a></span
