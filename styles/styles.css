@@ -673,7 +673,7 @@ p {
 
 .footer-email-box {
     padding: 15px 16px;
-    min-width: 295px;
+    min-width: 358px;
 
     font-size: 16px;
     line-height: 20px;
@@ -781,9 +781,6 @@ p {
 }
 
 /* Projects */
-/* .project-link {
-    text-decoration: none;
-} */
 
 .project-title {
     margin-top: 0;
@@ -817,21 +814,10 @@ p {
     display: block;
 }
 
-/* .project-item {
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-} */
-
 .project-item:hover,
 .project-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-/* .project-item .item {
-    text-decoration: none;
-    color: var(--primary-text-color);
-} */
 
 .project-card {
     position: relative;
@@ -901,8 +887,6 @@ p {
     transform: translate(-50%, -50%) scale(0.5);
 }
 
-
-
 .modal {
     position: absolute;
     top: 50%;
@@ -910,9 +894,12 @@ p {
     transform: translate(-50%, -50%) scale(1);
     min-width: 528px;
     min-height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
     transition-duration: 1000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 
     background-color: var(--primary-bg-color);
 }
@@ -938,10 +925,8 @@ p {
     /* gap: 10px; */
 }
 
-.form-item {
+.form-item-text {
     display: block;
-    position: relative;
-
     margin-bottom: 4px;
 
     font-size: 12px;
@@ -949,6 +934,12 @@ p {
     letter-spacing: 0.01em;
 
     color: var(--secondaty-text-color);
+}
+
+.form-item {
+    display: block;
+    position: relative;
+    margin: 0;
 }
 
 .form-list-box {
@@ -1002,7 +993,6 @@ p {
     display: block;
     resize: none;
 
-    margin-top: 4px;
     margin-bottom: 20px;
     padding: 12px 16px;
     width: 100%;
@@ -1024,11 +1014,6 @@ p {
     outline: none;
 }
 
-/* .form-check-box {
-    display: block;
-    align-items: center;
-} */
-
 .form-check-item {
     display: flex;
     align-items: center;
@@ -1048,8 +1033,6 @@ p {
     outline: 2px solid var(--primary-text-color);
     outline-offset: -2px;
     border-radius: 4px;
-
-
 }
 
 .form-check-icon {
@@ -1085,7 +1068,7 @@ p {
 }
 
 .form-link {
-    text-decoration: none;
+
     color: var(--accent-color);
 }
 
@@ -1137,14 +1120,15 @@ p {
     border: 1px solid rgba(0, 0, 0, 0.1);
 
 
-    transition-property: background-color, color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0s;
+
 }
 
 .bd-close-icon {
     fill: var(--logo-header-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 
 .reset-btn:hover .bd-close-icon,
