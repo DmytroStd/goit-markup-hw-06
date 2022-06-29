@@ -161,12 +161,12 @@ p {
     margin-left: auto;
 }
 
-.site-nav .item+.item,
-.site-cont .item+.item {
+.site-nav .item,
+.site-cont .item {
     margin-left: 50px;
 }
 
-.site-nav .link {
+.nav-link {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -558,6 +558,7 @@ p {
 }
 
 .footer-text .adress {
+
     color: var(--hero-text-color);
 }
 
@@ -565,8 +566,12 @@ p {
     margin-bottom: 9px;
 }
 
+.footer-item:last-child {
+    margin-bottom: 0px;
+}
+
 .footer-link {
-    display: block;
+    display: inline-block;
 
     font-style: normal;
     font-size: 14px;
@@ -579,10 +584,6 @@ p {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0s;
-}
-
-.footer-item:last-child {
-    margin-bottom: 0px;
 }
 
 .footer-link:hover,
@@ -1008,6 +1009,8 @@ p {
     transition-delay: 0s;
 }
 
+
+
 .form-comment-box:hover,
 .form-comment-box:focus {
     border-color: var(--accent-color);
@@ -1118,9 +1121,6 @@ p {
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
-
-
 }
 
 .bd-close-icon {
@@ -1147,3 +1147,57 @@ p {
 /* #FFFFFF - основной цвет фона */
 /* #2F303A - вторичный цвет фона */
 /* #F5F4FA - третий цвет фона */
+
+/* a[href="tel:+38-099-111-11-11"] {
+    color: green
+}
+
+a[href="mailto:info@example.com"] {
+    color: red;
+} */
+
+/* .footer-item {
+    background-color: tomato;
+} */
+
+/* .container.footer-box a {
+    background-color: red;
+} */
+
+/* .team-link:hover .team-icon {
+    background-color: red;
+} */
+
+/* .team-item:nth-child(2) {
+    background-color: red;
+} */
+
+/* .project-item:nth-child(2n) .projects-desk {
+    background-color: red;
+} */
+
+/* .project-item:nth-child(2n+1) .project-link:hover .project-card-text {
+    transform: translateY(0);
+    opacity: 1;
+} */
+/* label:last-of-type {
+    background-color: red;
+} */
+
+
+
+/* 1. Именно вот єта ссілка зеленіе; */
+/* .footer-item>.adress {
+    color: green;
+} */
+
+/* 2. Все дети голубіе; */
+/* .item {
+    background-color: blue;
+} */
+
+/* 3. все ссілки в контейнере зеленіе; */
+
+/* 4. иконка поменяла фон; */
+/* 5. второй в списке поменял фон; */
+/* 6. каждій второй заголовок карті поенял фон 7. */
